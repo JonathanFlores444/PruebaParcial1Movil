@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
                 enviarDatos.putInt("ced",cedula);
                 enviarDatos.putString("nom",nombres);
                 enviarDatos.putInt("pla",placa);
+                enviarDatos.putInt("ani",anio);
                 enviarDatos.putString("mar",marca);
                 enviarDatos.putString("col",color);
                 enviarDatos.putString("tip",tipo);
@@ -50,11 +51,9 @@ public class MainActivity extends AppCompatActivity {
                 enviarDatos.putInt("mul",multas);
 
 
-
-
-
-
-
+                Intent intent=new Intent(MainActivity.this,ResultadoActivity.class);
+                intent.putExtras(enviarDatos);
+                startActivity(intent);
 
             }
         });
