@@ -2,6 +2,7 @@ package com.jafa.pruebaparcial1movil;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -38,9 +39,21 @@ public class MainActivity extends AppCompatActivity {
                 int valor = Integer.parseInt(edValor.getText().toString());
                 int multas = Integer.parseInt(edMultas.getText().toString());
 
-                if(anio <= 2010){
+                Bundle enviarDatos=new Bundle();
+                enviarDatos.putInt("ced",cedula);
+                enviarDatos.putString("nom",nombres);
+                enviarDatos.putInt("pla",placa);
+                enviarDatos.putString("mar",marca);
+                enviarDatos.putString("col",color);
+                enviarDatos.putString("tip",tipo);
+                enviarDatos.putInt("val",valor);
+                enviarDatos.putInt("mul",multas);
 
-                }
+
+
+
+
+
 
 
             }
